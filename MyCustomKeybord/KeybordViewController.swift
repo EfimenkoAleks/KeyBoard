@@ -6,24 +6,57 @@
 //
 
 import UIKit
+import AVFoundation
+import Photos
 
-class KeybordViewController: UIViewController {
+class EfKeybordViewController: UIViewController {
 
+    private lazy var titleTextField: UITextField = {
+        let lb = UITextField()
+        lb.font = UIFont.boldSystemFont(ofSize: 22)
+        lb.text = ""
+//        lb.numberOfLines = 0
+        lb.backgroundColor = #colorLiteral(red: 0.8321695924, green: 0.985483706, blue: 0.4733308554, alpha: 1)
+        lb.translatesAutoresizingMaskIntoConstraints = false
+        return lb
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .red
+        self.createConstr()
+        
+        //Camera
+            AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
+                if response {
+                    //access granted
+                } else {
+
+                }
+            }
+
+            //Photos
+            let photos = PHPhotoLibrary.authorizationStatus()
+            if photos == .notDetermined {
+                PHPhotoLibrary.requestAuthorization({status in
+                    if status == .authorized{
+                        
+                    } else {
+                        
+                    }
+                })
+            }
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func createConstr() {
+        self.view.addSubview(titleTextField)
+        NSLayoutConstraint.activate([
+            titleTextField.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            titleTextField.widthAnchor.constraint(equalToConstant: self.view.frame.width),
+            titleTextField.heightAnchor.constraint(equalToConstant: 300),
+            titleTextField.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        ])
     }
-    */
 
 }

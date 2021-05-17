@@ -7,23 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5182EA2652A74100083048 /* OnbordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5182E92652A74100083048 /* OnbordingViewModel.swift */; };
+		3B5182F52652B0A700083048 /* OnbordingInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5182F42652B0A700083048 /* OnbordingInterface.swift */; };
+		3B5182F92652B0DA00083048 /* OnbordingWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5182F82652B0DA00083048 /* OnbordingWireFrame.swift */; };
+		3B5182FD2652B17E00083048 /* OnbordingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5182FC2652B17E00083048 /* OnbordingRouter.swift */; };
+		3B5183042652B2B400083048 /* OnbordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5183022652B2B400083048 /* OnbordingViewController.swift */; };
+		3B5183052652B2B400083048 /* OnbordingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5183032652B2B400083048 /* OnbordingViewController.xib */; };
+		3B51830A2652B80700083048 /* OnbordingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5183082652B80700083048 /* OnbordingCollectionViewCell.swift */; };
+		3B51830B2652B80700083048 /* OnbordingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5183092652B80700083048 /* OnbordingCollectionViewCell.xib */; };
 		3B603597264E945B00464331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B603596264E945B00464331 /* AppDelegate.swift */; };
-		3B603599264E945B00464331 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B603598264E945B00464331 /* SceneDelegate.swift */; };
-		3B60359B264E945B00464331 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60359A264E945B00464331 /* ViewController.swift */; };
-		3B60359E264E945B00464331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B60359C264E945B00464331 /* Main.storyboard */; };
 		3B6035A0264E945D00464331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B60359F264E945D00464331 /* Assets.xcassets */; };
 		3B6035A3264E945D00464331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6035A1264E945D00464331 /* LaunchScreen.storyboard */; };
+		3B6035B7264E9D3E00464331 /* KeybordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6035B5264E9D3E00464331 /* KeybordViewController.swift */; };
+		3B6035B8264E9D3E00464331 /* KeybordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6035B6264E9D3E00464331 /* KeybordViewController.xib */; };
+		3B6035C2264EA36100464331 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6035C1264EA36100464331 /* KeyboardViewController.swift */; };
+		3B6035C6264EA36100464331 /* EfKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B6035BF264EA36100464331 /* EfKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B6035CE264EA4BD00464331 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6035CD264EA4BD00464331 /* KeyboardViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3B6035C4264EA36100464331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B60358B264E945B00464331 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6035BE264EA36100464331;
+			remoteInfo = EfKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B6035CA264EA36100464331 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3B6035C6264EA36100464331 /* EfKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3B5182E92652A74100083048 /* OnbordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingViewModel.swift; sourceTree = "<group>"; };
+		3B5182F42652B0A700083048 /* OnbordingInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingInterface.swift; sourceTree = "<group>"; };
+		3B5182F82652B0DA00083048 /* OnbordingWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingWireFrame.swift; sourceTree = "<group>"; };
+		3B5182FC2652B17E00083048 /* OnbordingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingRouter.swift; sourceTree = "<group>"; };
+		3B5183022652B2B400083048 /* OnbordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingViewController.swift; sourceTree = "<group>"; };
+		3B5183032652B2B400083048 /* OnbordingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnbordingViewController.xib; sourceTree = "<group>"; };
+		3B5183082652B80700083048 /* OnbordingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B5183092652B80700083048 /* OnbordingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnbordingCollectionViewCell.xib; sourceTree = "<group>"; };
 		3B603593264E945B00464331 /* MyCustomKeybord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCustomKeybord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B603596264E945B00464331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B603598264E945B00464331 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B60359A264E945B00464331 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3B60359D264E945B00464331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B60359F264E945D00464331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B6035A2264E945D00464331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B6035A4264E945D00464331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6035B5264E9D3E00464331 /* KeybordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeybordViewController.swift; sourceTree = "<group>"; };
+		3B6035B6264E9D3E00464331 /* KeybordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeybordViewController.xib; sourceTree = "<group>"; };
+		3B6035BF264EA36100464331 /* EfKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EfKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6035C1264EA36100464331 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		3B6035C3264EA36100464331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6035CD264EA4BD00464331 /* KeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,13 +79,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B6035BC264EA36100464331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B5182E02652A68500083048 /* Onbording */ = {
+			isa = PBXGroup;
+			children = (
+				3B5182F32652A76500083048 /* Model */,
+				3B5182ED2652A74F00083048 /* View */,
+				3B5182F02652A75800083048 /* ViewModel */,
+				3B5182F42652B0A700083048 /* OnbordingInterface.swift */,
+				3B5182F82652B0DA00083048 /* OnbordingWireFrame.swift */,
+				3B5182FC2652B17E00083048 /* OnbordingRouter.swift */,
+			);
+			path = Onbording;
+			sourceTree = "<group>";
+		};
+		3B5182ED2652A74F00083048 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B5183022652B2B400083048 /* OnbordingViewController.swift */,
+				3B5183032652B2B400083048 /* OnbordingViewController.xib */,
+				3B5183082652B80700083048 /* OnbordingCollectionViewCell.swift */,
+				3B5183092652B80700083048 /* OnbordingCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B5182F02652A75800083048 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B5182E92652A74100083048 /* OnbordingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B5182F32652A76500083048 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3B60358A264E945B00464331 = {
 			isa = PBXGroup;
 			children = (
 				3B603595264E945B00464331 /* MyCustomKeybord */,
+				3B6035C0264EA36100464331 /* EfKeyboard */,
 				3B603594264E945B00464331 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				3B603593264E945B00464331 /* MyCustomKeybord.app */,
+				3B6035BF264EA36100464331 /* EfKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +149,25 @@
 		3B603595264E945B00464331 /* MyCustomKeybord */ = {
 			isa = PBXGroup;
 			children = (
+				3B5182E02652A68500083048 /* Onbording */,
 				3B603596264E945B00464331 /* AppDelegate.swift */,
-				3B603598264E945B00464331 /* SceneDelegate.swift */,
-				3B60359A264E945B00464331 /* ViewController.swift */,
-				3B60359C264E945B00464331 /* Main.storyboard */,
 				3B60359F264E945D00464331 /* Assets.xcassets */,
 				3B6035A1264E945D00464331 /* LaunchScreen.storyboard */,
 				3B6035A4264E945D00464331 /* Info.plist */,
+				3B6035B5264E9D3E00464331 /* KeybordViewController.swift */,
+				3B6035B6264E9D3E00464331 /* KeybordViewController.xib */,
 			);
 			path = MyCustomKeybord;
+			sourceTree = "<group>";
+		};
+		3B6035C0264EA36100464331 /* EfKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3B6035C1264EA36100464331 /* KeyboardViewController.swift */,
+				3B6035CD264EA4BD00464331 /* KeyboardViewController.xib */,
+				3B6035C3264EA36100464331 /* Info.plist */,
+			);
+			path = EfKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +180,34 @@
 				3B60358F264E945B00464331 /* Sources */,
 				3B603590264E945B00464331 /* Frameworks */,
 				3B603591264E945B00464331 /* Resources */,
+				3B6035CA264EA36100464331 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3B6035C5264EA36100464331 /* PBXTargetDependency */,
 			);
 			name = MyCustomKeybord;
 			productName = MyCustomKeybord;
 			productReference = 3B603593264E945B00464331 /* MyCustomKeybord.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3B6035BE264EA36100464331 /* EfKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6035C7264EA36100464331 /* Build configuration list for PBXNativeTarget "EfKeyboard" */;
+			buildPhases = (
+				3B6035BB264EA36100464331 /* Sources */,
+				3B6035BC264EA36100464331 /* Frameworks */,
+				3B6035BD264EA36100464331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EfKeyboard;
+			productName = EfKeyboard;
+			productReference = 3B6035BF264EA36100464331 /* EfKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +219,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					3B603592264E945B00464331 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3B6035BE264EA36100464331 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -115,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				3B603592264E945B00464331 /* MyCustomKeybord */,
+				3B6035BE264EA36100464331 /* EfKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -124,9 +250,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B51830B2652B80700083048 /* OnbordingCollectionViewCell.xib in Resources */,
 				3B6035A3264E945D00464331 /* LaunchScreen.storyboard in Resources */,
+				3B5183052652B2B400083048 /* OnbordingViewController.xib in Resources */,
 				3B6035A0264E945D00464331 /* Assets.xcassets in Resources */,
-				3B60359E264E945B00464331 /* Main.storyboard in Resources */,
+				3B6035B8264E9D3E00464331 /* KeybordViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6035BD264EA36100464331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6035CE264EA4BD00464331 /* KeyboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +273,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B60359B264E945B00464331 /* ViewController.swift in Sources */,
+				3B5182F52652B0A700083048 /* OnbordingInterface.swift in Sources */,
+				3B5182FD2652B17E00083048 /* OnbordingRouter.swift in Sources */,
+				3B5182EA2652A74100083048 /* OnbordingViewModel.swift in Sources */,
 				3B603597264E945B00464331 /* AppDelegate.swift in Sources */,
-				3B603599264E945B00464331 /* SceneDelegate.swift in Sources */,
+				3B6035B7264E9D3E00464331 /* KeybordViewController.swift in Sources */,
+				3B5182F92652B0DA00083048 /* OnbordingWireFrame.swift in Sources */,
+				3B5183042652B2B400083048 /* OnbordingViewController.swift in Sources */,
+				3B51830A2652B80700083048 /* OnbordingCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6035BB264EA36100464331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6035C2264EA36100464331 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		3B60359C264E945B00464331 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B60359D264E945B00464331 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		3B6035C5264EA36100464331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6035BE264EA36100464331 /* EfKeyboard */;
+			targetProxy = 3B6035C4264EA36100464331 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		3B6035A1264E945D00464331 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,9 +433,11 @@
 		3B6035A8264E945D00464331 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364PACBHLP;
 				INFOPLIST_FILE = MyCustomKeybord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,9 +453,11 @@
 		3B6035A9264E945D00464331 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364PACBHLP;
 				INFOPLIST_FILE = MyCustomKeybord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +465,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.natife.MyCustomKeybord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B6035C8264EA36100464331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364PACBHLP;
+				INFOPLIST_FILE = EfKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.natife.MyCustomKeybord.EfKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B6035C9264EA36100464331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364PACBHLP;
+				INFOPLIST_FILE = EfKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.natife.MyCustomKeybord.EfKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,6 +525,15 @@
 			buildConfigurations = (
 				3B6035A8264E945D00464331 /* Debug */,
 				3B6035A9264E945D00464331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B6035C7264EA36100464331 /* Build configuration list for PBXNativeTarget "EfKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6035C8264EA36100464331 /* Debug */,
+				3B6035C9264EA36100464331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
