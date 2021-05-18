@@ -19,13 +19,17 @@ class OnbordingRouter {
 
 extension OnbordingRouter: OnbordingRouterProtocol {
    
-//    func route(to routeID: String, from context: UIViewController, parameters: Int) {
-//          guard let route = OnbordingViewController.Route(rawValue: routeID) else {
-//             return
-//          }
-//          switch route {
-//          case .second:
-//           context.navigationController?.pushViewController( SecondWireFrame.create(index: parameters), animated: true)
-//          }
-//       }
+    func route(to routeID: String, from context: UIViewController) {
+          guard let route = OnbordingViewController.Route(rawValue: routeID) else {
+             return
+          }
+          switch route {
+          case .main:
+            let mainController = MainWireFrame.create()
+            let navigate = UINavigationController(rootViewController: mainController)
+            navigate.modalPresentationStyle = .fullScreen
+        
+            context.present(navigate, animated: true, completion: nil)
+          }
+       }
 }

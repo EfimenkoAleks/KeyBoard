@@ -1,0 +1,16 @@
+PODS:
+  - SwiftCheckboxDialog (1.0.1)
+
+DEPENDENCIES:
+  - SwiftCheckboxDialog
+
+SPEC REPOS:
+  trunk:
+    - SwiftCheckboxDialog
+
+SPEC CHECKSUMS:
+  SwiftCheckboxDialog: edfabc33371022c5c6ab0527a04b4d0f84bbe034
+
+PODFILE CHECKSUM: d2de9fc720b82695477c55d0b6a6dbfae033884b
+
+COCOAPODS: 1.10.1

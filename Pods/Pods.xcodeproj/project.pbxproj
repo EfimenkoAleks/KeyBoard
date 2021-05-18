@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B017B71C43426BFFE1CE7102818E41 /* Pods-EfKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC743BC5062363F09C83EF2C75EA995 /* Pods-EfKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		068C57CC841F2E71493678DF499A7A46 /* Pods-MyCustomKeybord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0152E160DA2DD7EFC8A9813E3D420731 /* Pods-MyCustomKeybord-dummy.m */; };
+		0AA7148583C0D7CB909ABEE6EEDDAA35 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C31F93CA06B5F7824A3F42DDC2F7584 /* CheckboxViewCell.swift */; };
+		1721F9B9B30478413E6FF02EBA979F41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3819F633409A03635A96C7B3B7A24548 /* SwiftCheckboxDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 302EBF8E00E8895D394693B8D91DDCE4 /* SwiftCheckboxDialog-dummy.m */; };
+		4A6A27E548CA2C44B523AA4CCE5980AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7F902E1B2B730FA1723F1FDB4779F4EA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED3E8362A63EC5D2CE9FB80B021C48 /* String.swift */; };
+		ACE76AA6DE8AED05D260D7E3A5F72CE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B2424032378018685FD10AFFFCC1AABD /* CheckboxDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0E7AC3724EF9DFB5CB590A641A01A /* CheckboxDialogViewController.swift */; };
+		CBC4CAEE37167FC387C575F02971DFFA /* SwiftCheckboxDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8983DFEAC3DD01E41A596970C284F96E /* SwiftCheckboxDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF369B9ED679478060B8E20EB1F4E0F0 /* Pods-EfKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3674A738CDEFA654D4CB85307000622B /* Pods-EfKeyboard-dummy.m */; };
+		FDCD0F7F5C12C18FCE52F4958EE5E88A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1EB7C89FE254C334843C4E1564003E /* UIColor.swift */; };
+		FF31B1247CD8A88E35869A07F2A1A1D7 /* Pods-MyCustomKeybord-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E7A848346D5E5D374543BE8B036C9D9 /* Pods-MyCustomKeybord-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67827BDC9B29741016DC89B637A5E65C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5935C285ED9588C594F1CBDEE2C59EA3;
+			remoteInfo = SwiftCheckboxDialog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0152E160DA2DD7EFC8A9813E3D420731 /* Pods-MyCustomKeybord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyCustomKeybord-dummy.m"; sourceTree = "<group>"; };
+		130611DDD4FCAD8988D37B404E6CFF54 /* Pods_EfKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EfKeyboard.framework; path = "Pods-EfKeyboard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		267DAAFA9610E687DA828320F15A2CFF /* Pods-EfKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EfKeyboard.modulemap"; sourceTree = "<group>"; };
+		2CA0E7AC3724EF9DFB5CB590A641A01A /* CheckboxDialogViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckboxDialogViewController.swift; path = SwiftCheckboxDialog/Classes/CheckboxDialogViewController.swift; sourceTree = "<group>"; };
+		302EBF8E00E8895D394693B8D91DDCE4 /* SwiftCheckboxDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCheckboxDialog-dummy.m"; sourceTree = "<group>"; };
+		3674A738CDEFA654D4CB85307000622B /* Pods-EfKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EfKeyboard-dummy.m"; sourceTree = "<group>"; };
+		37FFC5D18D11946BB69B74C813DD204F /* Pods-EfKeyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EfKeyboard-acknowledgements.plist"; sourceTree = "<group>"; };
+		57E3D0C70B0D5CC134FAE9298D4F2239 /* Pods_MyCustomKeybord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyCustomKeybord.framework; path = "Pods-MyCustomKeybord.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BBF6D45F0CF251D8E00516F4BBACE3 /* Pods-MyCustomKeybord-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCustomKeybord-Info.plist"; sourceTree = "<group>"; };
+		5E7A848346D5E5D374543BE8B036C9D9 /* Pods-MyCustomKeybord-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyCustomKeybord-umbrella.h"; sourceTree = "<group>"; };
+		616006B991C59E1426DC23F770CF3BA9 /* SwiftCheckboxDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftCheckboxDialog.framework; path = SwiftCheckboxDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		641ABA73ED500D05E2B13391371D0117 /* Pods-EfKeyboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EfKeyboard-Info.plist"; sourceTree = "<group>"; };
+		69EA0493A236B7A72C15CBBB7B072EDC /* Pods-MyCustomKeybord-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyCustomKeybord-frameworks.sh"; sourceTree = "<group>"; };
+		6D75891A853FB087339E53FD4C7DDDBA /* SwiftCheckboxDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftCheckboxDialog.modulemap; sourceTree = "<group>"; };
+		6DFD3CCCE345C56BDC436E6978839CBD /* SwiftCheckboxDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCheckboxDialog.release.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7BC743BC5062363F09C83EF2C75EA995 /* Pods-EfKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EfKeyboard-umbrella.h"; sourceTree = "<group>"; };
+		8983DFEAC3DD01E41A596970C284F96E /* SwiftCheckboxDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCheckboxDialog-umbrella.h"; sourceTree = "<group>"; };
+		987548C6A4873CC15DCE2DED4B53F80C /* SwiftCheckboxDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCheckboxDialog.debug.xcconfig; sourceTree = "<group>"; };
+		9C31F93CA06B5F7824A3F42DDC2F7584 /* CheckboxViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckboxViewCell.swift; path = SwiftCheckboxDialog/Classes/CheckboxViewCell.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A83BF0B206A887F308EBC2FC28DC170A /* SwiftCheckboxDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCheckboxDialog-prefix.pch"; sourceTree = "<group>"; };
+		AB251B058000238B50D5D3977BF1280A /* Pods-MyCustomKeybord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCustomKeybord.release.xcconfig"; sourceTree = "<group>"; };
+		AD25D0CCB3F307F01E6A89BF0FD50A97 /* Pods-EfKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EfKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		B1ED3E8362A63EC5D2CE9FB80B021C48 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = SwiftCheckboxDialog/Classes/String.swift; sourceTree = "<group>"; };
+		BE6C980C7FD4671B3E4C712D70255998 /* Pods-MyCustomKeybord-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCustomKeybord-acknowledgements.plist"; sourceTree = "<group>"; };
+		D549BE46E814696C332C84492FBDA5D3 /* Pods-EfKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EfKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		E926D1F92222BF9E3DE21EA929F4FCF7 /* Pods-MyCustomKeybord.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyCustomKeybord.modulemap"; sourceTree = "<group>"; };
+		EA43B75E0DA6045E43C7A786C34E26C6 /* Pods-MyCustomKeybord-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyCustomKeybord-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F55346FA19299838CF0586559910482B /* Pods-MyCustomKeybord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCustomKeybord.debug.xcconfig"; sourceTree = "<group>"; };
+		FB5AE0887F2BC24EC69FBFB29CF8B784 /* Pods-EfKeyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EfKeyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD1EB7C89FE254C334843C4E1564003E /* UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = SwiftCheckboxDialog/Classes/UIColor.swift; sourceTree = "<group>"; };
+		FDF6E6A9666D08CCA042D862CFCA4936 /* SwiftCheckboxDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftCheckboxDialog-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		241F7308D3B4C4BC986582A349BD4830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE76AA6DE8AED05D260D7E3A5F72CE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DC98F33B49033557B079A6974931E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6A27E548CA2C44B523AA4CCE5980AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3B9A5D75EE72461AD9C8C7D211A028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1721F9B9B30478413E6FF02EBA979F41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C383EDC3A4E018D8E45B1ACFAF60C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				130611DDD4FCAD8988D37B404E6CFF54 /* Pods_EfKeyboard.framework */,
+				57E3D0C70B0D5CC134FAE9298D4F2239 /* Pods_MyCustomKeybord.framework */,
+				616006B991C59E1426DC23F770CF3BA9 /* SwiftCheckboxDialog.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C2C3C35DF40AF931EF81E9BF106CBD1 /* SwiftCheckboxDialog */ = {
+			isa = PBXGroup;
+			children = (
+				2CA0E7AC3724EF9DFB5CB590A641A01A /* CheckboxDialogViewController.swift */,
+				9C31F93CA06B5F7824A3F42DDC2F7584 /* CheckboxViewCell.swift */,
+				B1ED3E8362A63EC5D2CE9FB80B021C48 /* String.swift */,
+				FD1EB7C89FE254C334843C4E1564003E /* UIColor.swift */,
+				6BDE1F56116B38449B5BF131587E87C7 /* Support Files */,
+			);
+			name = SwiftCheckboxDialog;
+			path = SwiftCheckboxDialog;
+			sourceTree = "<group>";
+		};
+		431BE4C716EA3B83AC4A2B5AF34A3D97 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC43C32A89D1F2E8D0477AB51A50E986 /* Pods-EfKeyboard */,
+				FE5212158844207DB88D524E5323951E /* Pods-MyCustomKeybord */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6BDE1F56116B38449B5BF131587E87C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D75891A853FB087339E53FD4C7DDDBA /* SwiftCheckboxDialog.modulemap */,
+				302EBF8E00E8895D394693B8D91DDCE4 /* SwiftCheckboxDialog-dummy.m */,
+				FDF6E6A9666D08CCA042D862CFCA4936 /* SwiftCheckboxDialog-Info.plist */,
+				A83BF0B206A887F308EBC2FC28DC170A /* SwiftCheckboxDialog-prefix.pch */,
+				8983DFEAC3DD01E41A596970C284F96E /* SwiftCheckboxDialog-umbrella.h */,
+				987548C6A4873CC15DCE2DED4B53F80C /* SwiftCheckboxDialog.debug.xcconfig */,
+				6DFD3CCCE345C56BDC436E6978839CBD /* SwiftCheckboxDialog.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftCheckboxDialog";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E9EDA611C6DD254102F35F82A6C15D0D /* Pods */,
+				03C383EDC3A4E018D8E45B1ACFAF60C1 /* Products */,
+				431BE4C716EA3B83AC4A2B5AF34A3D97 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9EDA611C6DD254102F35F82A6C15D0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C3C35DF40AF931EF81E9BF106CBD1 /* SwiftCheckboxDialog */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC43C32A89D1F2E8D0477AB51A50E986 /* Pods-EfKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				267DAAFA9610E687DA828320F15A2CFF /* Pods-EfKeyboard.modulemap */,
+				FB5AE0887F2BC24EC69FBFB29CF8B784 /* Pods-EfKeyboard-acknowledgements.markdown */,
+				37FFC5D18D11946BB69B74C813DD204F /* Pods-EfKeyboard-acknowledgements.plist */,
+				3674A738CDEFA654D4CB85307000622B /* Pods-EfKeyboard-dummy.m */,
+				641ABA73ED500D05E2B13391371D0117 /* Pods-EfKeyboard-Info.plist */,
+				7BC743BC5062363F09C83EF2C75EA995 /* Pods-EfKeyboard-umbrella.h */,
+				D549BE46E814696C332C84492FBDA5D3 /* Pods-EfKeyboard.debug.xcconfig */,
+				AD25D0CCB3F307F01E6A89BF0FD50A97 /* Pods-EfKeyboard.release.xcconfig */,
+			);
+			name = "Pods-EfKeyboard";
+			path = "Target Support Files/Pods-EfKeyboard";
+			sourceTree = "<group>";
+		};
+		FE5212158844207DB88D524E5323951E /* Pods-MyCustomKeybord */ = {
+			isa = PBXGroup;
+			children = (
+				E926D1F92222BF9E3DE21EA929F4FCF7 /* Pods-MyCustomKeybord.modulemap */,
+				EA43B75E0DA6045E43C7A786C34E26C6 /* Pods-MyCustomKeybord-acknowledgements.markdown */,
+				BE6C980C7FD4671B3E4C712D70255998 /* Pods-MyCustomKeybord-acknowledgements.plist */,
+				0152E160DA2DD7EFC8A9813E3D420731 /* Pods-MyCustomKeybord-dummy.m */,
+				69EA0493A236B7A72C15CBBB7B072EDC /* Pods-MyCustomKeybord-frameworks.sh */,
+				58BBF6D45F0CF251D8E00516F4BBACE3 /* Pods-MyCustomKeybord-Info.plist */,
+				5E7A848346D5E5D374543BE8B036C9D9 /* Pods-MyCustomKeybord-umbrella.h */,
+				F55346FA19299838CF0586559910482B /* Pods-MyCustomKeybord.debug.xcconfig */,
+				AB251B058000238B50D5D3977BF1280A /* Pods-MyCustomKeybord.release.xcconfig */,
+			);
+			name = "Pods-MyCustomKeybord";
+			path = "Target Support Files/Pods-MyCustomKeybord";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		346F35CD23C968FC1FFD80EC3E31270A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B017B71C43426BFFE1CE7102818E41 /* Pods-EfKeyboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63B8EF6ED265CCC292250683971F94B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF31B1247CD8A88E35869A07F2A1A1D7 /* Pods-MyCustomKeybord-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CBD3A6A3DEAD5EE7493DFE8E91D9F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC4CAEE37167FC387C575F02971DFFA /* SwiftCheckboxDialog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2155712217E536D5DB54261DD8141C37 /* Pods-EfKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F887CF39BFE96A5DF8BF3EDF5B781208 /* Build configuration list for PBXNativeTarget "Pods-EfKeyboard" */;
+			buildPhases = (
+				346F35CD23C968FC1FFD80EC3E31270A /* Headers */,
+				D7B5EAE1F7744C9F94AF28CD2CC6CE07 /* Sources */,
+				25DC98F33B49033557B079A6974931E8 /* Frameworks */,
+				2EAF855B71117E5394E37355D905C063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EfKeyboard";
+			productName = "Pods-EfKeyboard";
+			productReference = 130611DDD4FCAD8988D37B404E6CFF54 /* Pods_EfKeyboard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5935C285ED9588C594F1CBDEE2C59EA3 /* SwiftCheckboxDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46F7474496174D0946C7AED4A11CF5A /* Build configuration list for PBXNativeTarget "SwiftCheckboxDialog" */;
+			buildPhases = (
+				F7CBD3A6A3DEAD5EE7493DFE8E91D9F8 /* Headers */,
+				D16A00DF473541904153CDA92A29661D /* Sources */,
+				241F7308D3B4C4BC986582A349BD4830 /* Frameworks */,
+				FADAA218CCF2188D8ACDF22DE14564DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCheckboxDialog;
+			productName = SwiftCheckboxDialog;
+			productReference = 616006B991C59E1426DC23F770CF3BA9 /* SwiftCheckboxDialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8660E069470E55B6412684E0A60CB761 /* Pods-MyCustomKeybord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0981B181A72FEA6A58536FB29145B39 /* Build configuration list for PBXNativeTarget "Pods-MyCustomKeybord" */;
+			buildPhases = (
+				E63B8EF6ED265CCC292250683971F94B /* Headers */,
+				3E079E70FCA952352860FA69A391017B /* Sources */,
+				ED3B9A5D75EE72461AD9C8C7D211A028 /* Frameworks */,
+				7B82897198812EDB2BEABECDA636A82A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD9B003FE08807F16B3E7821528C504A /* PBXTargetDependency */,
+			);
+			name = "Pods-MyCustomKeybord";
+			productName = "Pods-MyCustomKeybord";
+			productReference = 57E3D0C70B0D5CC134FAE9298D4F2239 /* Pods_MyCustomKeybord.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 03C383EDC3A4E018D8E45B1ACFAF60C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2155712217E536D5DB54261DD8141C37 /* Pods-EfKeyboard */,
+				8660E069470E55B6412684E0A60CB761 /* Pods-MyCustomKeybord */,
+				5935C285ED9588C594F1CBDEE2C59EA3 /* SwiftCheckboxDialog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EAF855B71117E5394E37355D905C063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B82897198812EDB2BEABECDA636A82A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADAA218CCF2188D8ACDF22DE14564DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E079E70FCA952352860FA69A391017B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068C57CC841F2E71493678DF499A7A46 /* Pods-MyCustomKeybord-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16A00DF473541904153CDA92A29661D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2424032378018685FD10AFFFCC1AABD /* CheckboxDialogViewController.swift in Sources */,
+				0AA7148583C0D7CB909ABEE6EEDDAA35 /* CheckboxViewCell.swift in Sources */,
+				7F902E1B2B730FA1723F1FDB4779F4EA /* String.swift in Sources */,
+				3819F633409A03635A96C7B3B7A24548 /* SwiftCheckboxDialog-dummy.m in Sources */,
+				FDCD0F7F5C12C18FCE52F4958EE5E88A /* UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7B5EAE1F7744C9F94AF28CD2CC6CE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF369B9ED679478060B8E20EB1F4E0F0 /* Pods-EfKeyboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD9B003FE08807F16B3E7821528C504A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftCheckboxDialog;
+			target = 5935C285ED9588C594F1CBDEE2C59EA3 /* SwiftCheckboxDialog */;
+			targetProxy = 67827BDC9B29741016DC89B637A5E65C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		407486C4912423DBD981475656A04C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 987548C6A4873CC15DCE2DED4B53F80C /* SwiftCheckboxDialog.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftCheckboxDialog/SwiftCheckboxDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftCheckboxDialog/SwiftCheckboxDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftCheckboxDialog/SwiftCheckboxDialog.modulemap";
+				PRODUCT_MODULE_NAME = SwiftCheckboxDialog;
+				PRODUCT_NAME = SwiftCheckboxDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A5BC4978591301D320CF4B082FFDD889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D549BE46E814696C332C84492FBDA5D3 /* Pods-EfKeyboard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EfKeyboard/Pods-EfKeyboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EfKeyboard/Pods-EfKeyboard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3FBB33DB18C46FF4DC3ED67764DE5CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F55346FA19299838CF0586559910482B /* Pods-MyCustomKeybord.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD4472E6F6E8BCAB253796D3F1BE9E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DFD3CCCE345C56BDC436E6978839CBD /* SwiftCheckboxDialog.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftCheckboxDialog/SwiftCheckboxDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftCheckboxDialog/SwiftCheckboxDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftCheckboxDialog/SwiftCheckboxDialog.modulemap";
+				PRODUCT_MODULE_NAME = SwiftCheckboxDialog;
+				PRODUCT_NAME = SwiftCheckboxDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5528B519AECF94C3432B52CFE8B3137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB251B058000238B50D5D3977BF1280A /* Pods-MyCustomKeybord.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E15072CA41E72E10695E0D5BC31377A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD25D0CCB3F307F01E6A89BF0FD50A97 /* Pods-EfKeyboard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EfKeyboard/Pods-EfKeyboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EfKeyboard/Pods-EfKeyboard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0981B181A72FEA6A58536FB29145B39 /* Build configuration list for PBXNativeTarget "Pods-MyCustomKeybord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FBB33DB18C46FF4DC3ED67764DE5CF /* Debug */,
+				C5528B519AECF94C3432B52CFE8B3137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46F7474496174D0946C7AED4A11CF5A /* Build configuration list for PBXNativeTarget "SwiftCheckboxDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407486C4912423DBD981475656A04C8B /* Debug */,
+				BD4472E6F6E8BCAB253796D3F1BE9E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F887CF39BFE96A5DF8BF3EDF5B781208 /* Build configuration list for PBXNativeTarget "Pods-EfKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BC4978591301D320CF4B082FFDD889 /* Debug */,
+				E15072CA41E72E10695E0D5BC31377A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

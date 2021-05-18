@@ -16,14 +16,13 @@ class OnbordingCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       
     }
     
-    func configure(image: String, title: String, subtitle: String, description: String) {
-        self.imageImageView.image = UIImage(named: image)
-        self.titleLabel.text = title
-        self.descriptionLabel.text = description
-        self.subTitleLabel.text = subtitle
+    func configure(model: OnbordingModel) {
+        self.imageImageView.image = UIImage(named: model.image)
+        self.titleLabel.text = model.title
+        self.descriptionLabel.text = model.description
+        self.subTitleLabel.text = model.subTitle
     }
 
 }

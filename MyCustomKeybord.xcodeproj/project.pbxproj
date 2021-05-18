@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		3B5183052652B2B400083048 /* OnbordingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5183032652B2B400083048 /* OnbordingViewController.xib */; };
 		3B51830A2652B80700083048 /* OnbordingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5183082652B80700083048 /* OnbordingCollectionViewCell.swift */; };
 		3B51830B2652B80700083048 /* OnbordingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5183092652B80700083048 /* OnbordingCollectionViewCell.xib */; };
+		3B5EC1242653909C00A51E2B /* OnbordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC1232653909C00A51E2B /* OnbordingModel.swift */; };
+		3B5EC1292653940800A51E2B /* MokOnbording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC1282653940800A51E2B /* MokOnbording.swift */; };
+		3B5EC13026539ADE00A51E2B /* OnbordingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC12F26539ADE00A51E2B /* OnbordingButton.swift */; };
+		3B5EC1362653A8AF00A51E2B /* DIConteiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC1352653A8AF00A51E2B /* DIConteiner.swift */; };
+		3B5EC1512653FC2800A51E2B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC1502653FC2800A51E2B /* MainViewModel.swift */; };
+		3B5EC15B2653FC5F00A51E2B /* MainInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC15A2653FC5F00A51E2B /* MainInterface.swift */; };
+		3B5EC15F2653FC9500A51E2B /* MainWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC15E2653FC9500A51E2B /* MainWireFrame.swift */; };
+		3B5EC1632653FCB200A51E2B /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC1622653FCB200A51E2B /* MainRouter.swift */; };
 		3B603597264E945B00464331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B603596264E945B00464331 /* AppDelegate.swift */; };
 		3B6035A0264E945D00464331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B60359F264E945D00464331 /* Assets.xcassets */; };
 		3B6035A3264E945D00464331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6035A1264E945D00464331 /* LaunchScreen.storyboard */; };
@@ -23,6 +31,8 @@
 		3B6035C2264EA36100464331 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6035C1264EA36100464331 /* KeyboardViewController.swift */; };
 		3B6035C6264EA36100464331 /* EfKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B6035BF264EA36100464331 /* EfKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3B6035CE264EA4BD00464331 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6035CD264EA4BD00464331 /* KeyboardViewController.xib */; };
+		AA81DFA0BE01A50D3098395F /* Pods_EfKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD09F9B11DCF1F81432FA13B /* Pods_EfKeyboard.framework */; };
+		F0916361D86C355CAC89B562 /* Pods_MyCustomKeybord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45EA0C3E798A9EA49ABD2E2 /* Pods_MyCustomKeybord.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +60,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0353A0F632DBEB4F42ED7F73 /* Pods-EfKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfKeyboard.release.xcconfig"; path = "Target Support Files/Pods-EfKeyboard/Pods-EfKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		27C6791C9F7E9375CFE8126F /* Pods-MyCustomKeybord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCustomKeybord.debug.xcconfig"; path = "Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord.debug.xcconfig"; sourceTree = "<group>"; };
 		3B5182E92652A74100083048 /* OnbordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingViewModel.swift; sourceTree = "<group>"; };
 		3B5182F42652B0A700083048 /* OnbordingInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingInterface.swift; sourceTree = "<group>"; };
 		3B5182F82652B0DA00083048 /* OnbordingWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingWireFrame.swift; sourceTree = "<group>"; };
@@ -58,6 +70,14 @@
 		3B5183032652B2B400083048 /* OnbordingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnbordingViewController.xib; sourceTree = "<group>"; };
 		3B5183082652B80700083048 /* OnbordingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B5183092652B80700083048 /* OnbordingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnbordingCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B5EC1232653909C00A51E2B /* OnbordingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingModel.swift; sourceTree = "<group>"; };
+		3B5EC1282653940800A51E2B /* MokOnbording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokOnbording.swift; sourceTree = "<group>"; };
+		3B5EC12F26539ADE00A51E2B /* OnbordingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingButton.swift; sourceTree = "<group>"; };
+		3B5EC1352653A8AF00A51E2B /* DIConteiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIConteiner.swift; sourceTree = "<group>"; };
+		3B5EC1502653FC2800A51E2B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3B5EC15A2653FC5F00A51E2B /* MainInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterface.swift; sourceTree = "<group>"; };
+		3B5EC15E2653FC9500A51E2B /* MainWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrame.swift; sourceTree = "<group>"; };
+		3B5EC1622653FCB200A51E2B /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		3B603593264E945B00464331 /* MyCustomKeybord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCustomKeybord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B603596264E945B00464331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B60359F264E945D00464331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +89,10 @@
 		3B6035C1264EA36100464331 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		3B6035C3264EA36100464331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6035CD264EA4BD00464331 /* KeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
+		45702CB1CACCDC564693F596 /* Pods-MyCustomKeybord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCustomKeybord.release.xcconfig"; path = "Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord.release.xcconfig"; sourceTree = "<group>"; };
+		4B87279999396B5884A6E741 /* Pods-EfKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-EfKeyboard/Pods-EfKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		DD09F9B11DCF1F81432FA13B /* Pods_EfKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EfKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45EA0C3E798A9EA49ABD2E2 /* Pods_MyCustomKeybord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCustomKeybord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0916361D86C355CAC89B562 /* Pods_MyCustomKeybord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,12 +108,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA81DFA0BE01A50D3098395F /* Pods_EfKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		244158215C194A1EFB9C40D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD09F9B11DCF1F81432FA13B /* Pods_EfKeyboard.framework */,
+				F45EA0C3E798A9EA49ABD2E2 /* Pods_MyCustomKeybord.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B5182E02652A68500083048 /* Onbording */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +159,63 @@
 		3B5182F32652A76500083048 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3B5EC1232653909C00A51E2B /* OnbordingModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3B5EC1272653939B00A51E2B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B5EC1282653940800A51E2B /* MokOnbording.swift */,
+				3B5EC1352653A8AF00A51E2B /* DIConteiner.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3B5EC12E26539A9B00A51E2B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3B5EC12F26539ADE00A51E2B /* OnbordingButton.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3B5EC1482653FBA800A51E2B /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				3B5EC14F2653FC0100A51E2B /* ViewModel */,
+				3B5EC14E2653FBF400A51E2B /* Model */,
+				3B5EC14B2653FBC900A51E2B /* View */,
+				3B5EC15A2653FC5F00A51E2B /* MainInterface.swift */,
+				3B5EC15E2653FC9500A51E2B /* MainWireFrame.swift */,
+				3B5EC1622653FCB200A51E2B /* MainRouter.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		3B5EC14B2653FBC900A51E2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B6035B5264E9D3E00464331 /* KeybordViewController.swift */,
+				3B6035B6264E9D3E00464331 /* KeybordViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B5EC14E2653FBF400A51E2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B5EC14F2653FC0100A51E2B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B5EC1502653FC2800A51E2B /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3B60358A264E945B00464331 = {
@@ -134,6 +224,8 @@
 				3B603595264E945B00464331 /* MyCustomKeybord */,
 				3B6035C0264EA36100464331 /* EfKeyboard */,
 				3B603594264E945B00464331 /* Products */,
+				F8C742CD7A699B1CE8442C51 /* Pods */,
+				244158215C194A1EFB9C40D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,13 +241,14 @@
 		3B603595264E945B00464331 /* MyCustomKeybord */ = {
 			isa = PBXGroup;
 			children = (
+				3B5EC12E26539A9B00A51E2B /* Common */,
+				3B5EC1272653939B00A51E2B /* Services */,
 				3B5182E02652A68500083048 /* Onbording */,
+				3B5EC1482653FBA800A51E2B /* MainModule */,
 				3B603596264E945B00464331 /* AppDelegate.swift */,
 				3B60359F264E945D00464331 /* Assets.xcassets */,
 				3B6035A1264E945D00464331 /* LaunchScreen.storyboard */,
 				3B6035A4264E945D00464331 /* Info.plist */,
-				3B6035B5264E9D3E00464331 /* KeybordViewController.swift */,
-				3B6035B6264E9D3E00464331 /* KeybordViewController.xib */,
 			);
 			path = MyCustomKeybord;
 			sourceTree = "<group>";
@@ -170,6 +263,17 @@
 			path = EfKeyboard;
 			sourceTree = "<group>";
 		};
+		F8C742CD7A699B1CE8442C51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B87279999396B5884A6E741 /* Pods-EfKeyboard.debug.xcconfig */,
+				0353A0F632DBEB4F42ED7F73 /* Pods-EfKeyboard.release.xcconfig */,
+				27C6791C9F7E9375CFE8126F /* Pods-MyCustomKeybord.debug.xcconfig */,
+				45702CB1CACCDC564693F596 /* Pods-MyCustomKeybord.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,10 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6035A7264E945D00464331 /* Build configuration list for PBXNativeTarget "MyCustomKeybord" */;
 			buildPhases = (
+				F9C9440BC4230872049E897B /* [CP] Check Pods Manifest.lock */,
 				3B60358F264E945B00464331 /* Sources */,
 				3B603590264E945B00464331 /* Frameworks */,
 				3B603591264E945B00464331 /* Resources */,
 				3B6035CA264EA36100464331 /* Embed App Extensions */,
+				536B061C763B7E06FFCDFBF9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6035C7264EA36100464331 /* Build configuration list for PBXNativeTarget "EfKeyboard" */;
 			buildPhases = (
+				C6139D85DB7804790C41AE24 /* [CP] Check Pods Manifest.lock */,
 				3B6035BB264EA36100464331 /* Sources */,
 				3B6035BC264EA36100464331 /* Frameworks */,
 				3B6035BD264EA36100464331 /* Resources */,
@@ -268,18 +375,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		536B061C763B7E06FFCDFBF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6139D85DB7804790C41AE24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EfKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C9440BC4230872049E897B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCustomKeybord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B60358F264E945B00464331 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3B5182F52652B0A700083048 /* OnbordingInterface.swift in Sources */,
+				3B5EC1632653FCB200A51E2B /* MainRouter.swift in Sources */,
+				3B5EC1242653909C00A51E2B /* OnbordingModel.swift in Sources */,
 				3B5182FD2652B17E00083048 /* OnbordingRouter.swift in Sources */,
 				3B5182EA2652A74100083048 /* OnbordingViewModel.swift in Sources */,
+				3B5EC1362653A8AF00A51E2B /* DIConteiner.swift in Sources */,
+				3B5EC1512653FC2800A51E2B /* MainViewModel.swift in Sources */,
 				3B603597264E945B00464331 /* AppDelegate.swift in Sources */,
 				3B6035B7264E9D3E00464331 /* KeybordViewController.swift in Sources */,
+				3B5EC1292653940800A51E2B /* MokOnbording.swift in Sources */,
 				3B5182F92652B0DA00083048 /* OnbordingWireFrame.swift in Sources */,
 				3B5183042652B2B400083048 /* OnbordingViewController.swift in Sources */,
+				3B5EC15F2653FC9500A51E2B /* MainWireFrame.swift in Sources */,
+				3B5EC13026539ADE00A51E2B /* OnbordingButton.swift in Sources */,
+				3B5EC15B2653FC5F00A51E2B /* MainInterface.swift in Sources */,
 				3B51830A2652B80700083048 /* OnbordingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +611,7 @@
 		};
 		3B6035A8264E945D00464331 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C6791C9F7E9375CFE8126F /* Pods-MyCustomKeybord.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -452,6 +632,7 @@
 		};
 		3B6035A9264E945D00464331 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45702CB1CACCDC564693F596 /* Pods-MyCustomKeybord.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -472,6 +653,7 @@
 		};
 		3B6035C8264EA36100464331 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B87279999396B5884A6E741 /* Pods-EfKeyboard.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 364PACBHLP;
@@ -491,6 +673,7 @@
 		};
 		3B6035C9264EA36100464331 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0353A0F632DBEB4F42ED7F73 /* Pods-EfKeyboard.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 364PACBHLP;

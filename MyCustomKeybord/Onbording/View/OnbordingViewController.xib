@@ -8,9 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnbordingViewController" customModule="MyCustomKeybord" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnbordingViewController" customModule="MyCustomKeybord">
             <connections>
                 <outlet property="collection" destination="oop-0L-cXQ" id="kbY-oB-bnE"/>
+                <outlet property="onbordingButton" destination="Lp6-mB-Wc0" id="alx-8m-Zrd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oop-0L-cXQ">
-                    <rect key="frame" x="0.0" y="44" width="414" height="698"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="672"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S0f-Rj-Igq">
                         <size key="itemSize" width="128" height="128"/>
@@ -29,22 +30,25 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp6-mB-Wc0">
-                    <rect key="frame" x="30" y="762" width="354" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp6-mB-Wc0" customClass="OnbordingButton" customModule="MyCustomKeybord">
+                    <rect key="frame" x="20" y="736" width="374" height="55"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="3Qd-Qj-dIw"/>
+                        <constraint firstAttribute="height" constant="55" id="3Qd-Qj-dIw"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="ADD THE SCRIBENS"/>
+                    <connections>
+                        <action selector="tapButton:" destination="-1" eventType="touchUpInside" id="T5T-Y8-NoG"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oop-0L-cXQ" secondAttribute="trailing" id="5YL-aE-VUI"/>
+                <constraint firstItem="oop-0L-cXQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5YL-aE-VUI"/>
                 <constraint firstItem="Lp6-mB-Wc0" firstAttribute="top" secondItem="oop-0L-cXQ" secondAttribute="bottom" constant="20" id="9rl-6H-lVk"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lp6-mB-Wc0" secondAttribute="trailing" constant="30" id="RCF-pK-Nkh"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Lp6-mB-Wc0" secondAttribute="bottom" constant="50" id="cae-zw-O7H"/>
-                <constraint firstItem="Lp6-mB-Wc0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="f4g-ly-YrZ"/>
+                <constraint firstItem="Lp6-mB-Wc0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="RCF-pK-Nkh"/>
+                <constraint firstItem="oop-0L-cXQ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.75" id="aoo-J7-UXz"/>
+                <constraint firstItem="Lp6-mB-Wc0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="f4g-ly-YrZ"/>
                 <constraint firstItem="oop-0L-cXQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qYt-sP-RhR"/>
                 <constraint firstItem="oop-0L-cXQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ybB-RS-nlr"/>
             </constraints>

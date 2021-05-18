@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow()
         
-        let module = EfKeybordViewController()
-        let navigation = UINavigationController(rootViewController: module)
-        window.rootViewController = navigation
+        let module = OnbordingWireFrame.create()
+ //       let navigation = UINavigationController(rootViewController: module)
+        window.rootViewController = module
         window.makeKeyAndVisible()
         self.window = window
         return true

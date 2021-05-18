@@ -13,7 +13,7 @@ class OnbordingWireFrame {
         
         let view = OnbordingViewController()
         let router = OnbordingRouter(controller: view)
-        let viewModel = OnbordingViewModel()
+        let viewModel = OnbordingViewModel(service: DIContainer.shared.apiServiceOnbording)
         view.viewModel = viewModel
         view.router = router
         

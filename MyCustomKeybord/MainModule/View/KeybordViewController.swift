@@ -9,7 +9,10 @@ import UIKit
 import AVFoundation
 import Photos
 
-class EfKeybordViewController: UIViewController {
+class MainViewController: UIViewController {
+    
+    var viewModel: MainViewModelProtocol!
+    var router: MainRouterProtocol!
 
     private lazy var titleTextField: UITextField = {
         let lb = UITextField()
