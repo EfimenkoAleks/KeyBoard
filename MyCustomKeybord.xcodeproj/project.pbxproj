@@ -31,6 +31,8 @@
 		3B6035C2264EA36100464331 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6035C1264EA36100464331 /* KeyboardViewController.swift */; };
 		3B6035C6264EA36100464331 /* EfKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B6035BF264EA36100464331 /* EfKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3B6035CE264EA4BD00464331 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6035CD264EA4BD00464331 /* KeyboardViewController.xib */; };
+		3B60FB0C2654E002002B8E50 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60FB0B2654E002002B8E50 /* KeyboardButton.swift */; };
+		3B60FB1026555E4A002B8E50 /* KeyboardOtherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60FB0F26555E4A002B8E50 /* KeyboardOtherButton.swift */; };
 		AA81DFA0BE01A50D3098395F /* Pods_EfKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD09F9B11DCF1F81432FA13B /* Pods_EfKeyboard.framework */; };
 		F0916361D86C355CAC89B562 /* Pods_MyCustomKeybord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45EA0C3E798A9EA49ABD2E2 /* Pods_MyCustomKeybord.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +91,8 @@
 		3B6035C1264EA36100464331 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		3B6035C3264EA36100464331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6035CD264EA4BD00464331 /* KeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
+		3B60FB0B2654E002002B8E50 /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		3B60FB0F26555E4A002B8E50 /* KeyboardOtherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardOtherButton.swift; sourceTree = "<group>"; };
 		45702CB1CACCDC564693F596 /* Pods-MyCustomKeybord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCustomKeybord.release.xcconfig"; path = "Target Support Files/Pods-MyCustomKeybord/Pods-MyCustomKeybord.release.xcconfig"; sourceTree = "<group>"; };
 		4B87279999396B5884A6E741 /* Pods-EfKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-EfKeyboard/Pods-EfKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		DD09F9B11DCF1F81432FA13B /* Pods_EfKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EfKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,6 +263,8 @@
 				3B6035C1264EA36100464331 /* KeyboardViewController.swift */,
 				3B6035CD264EA4BD00464331 /* KeyboardViewController.xib */,
 				3B6035C3264EA36100464331 /* Info.plist */,
+				3B60FB0B2654E002002B8E50 /* KeyboardButton.swift */,
+				3B60FB0F26555E4A002B8E50 /* KeyboardOtherButton.swift */,
 			);
 			path = EfKeyboard;
 			sourceTree = "<group>";
@@ -467,6 +473,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B60FB1026555E4A002B8E50 /* KeyboardOtherButton.swift in Sources */,
+				3B60FB0C2654E002002B8E50 /* KeyboardButton.swift in Sources */,
 				3B6035C2264EA36100464331 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

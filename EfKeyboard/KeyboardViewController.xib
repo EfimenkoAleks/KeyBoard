@@ -10,7 +10,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="EfKeyboard">
             <connections>
                 <outlet property="charSet" destination="3fL-dr-Sv9" id="iCh-6q-hDZ"/>
+                <outlet property="charSet2" destination="oft-vy-naI" id="yQ0-q2-o4g"/>
+                <outlet property="charSet3" destination="8tB-DD-mx0" id="YxI-S5-mUe"/>
+                <outlet property="charSet4" destination="RjS-YC-8yQ" id="oMW-Yu-4UO"/>
+                <outlet property="logo" destination="J9k-qz-Tl5" id="edN-fm-gEy"/>
                 <outlet property="numberSet" destination="vld-dm-Ysi" id="qd1-wY-hBg"/>
+                <outlet property="otherChar" destination="CWa-wp-4aQ" id="Udc-Uu-zBk"/>
                 <outlet property="row1" destination="HdL-Iu-t6j" id="faO-E4-QmR"/>
                 <outlet property="row2" destination="dmf-qE-4mf" id="gl4-ss-avq"/>
                 <outlet property="row3" destination="2MW-KR-5YF" id="3ws-Pr-sIw"/>
@@ -20,454 +25,731 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="aDE-cx-k71">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3fL-dr-Sv9" userLabel="CharSet">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vld-dm-Ysi" userLabel="NumberSet">
+                    <rect key="frame" x="3" y="75" width="408" height="55"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3T-zW-7QW">
-                            <rect key="frame" x="0.0" y="25" width="41.5" height="30"/>
-                            <state key="normal" title="!"/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="LPt-tK-LjS"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-FO-ljj">
-                            <rect key="frame" x="41.5" y="25" width="41.5" height="30"/>
-                            <state key="normal" title="@"/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="3yR-UN-Cnz"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VS-HX-M5P">
-                            <rect key="frame" x="83" y="25" width="41" height="30"/>
-                            <state key="normal" title="#"/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Gfe-jG-jp7"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlp-yU-OTE">
-                            <rect key="frame" x="124" y="25" width="41.5" height="30"/>
-                            <state key="normal" title="$"/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="SOo-V9-ObC"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbR-qU-Qgy">
-                            <rect key="frame" x="165.5" y="25" width="41.5" height="30"/>
-                            <state key="normal" title="%"/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="fcc-DS-tEa"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhw-Yd-tJy">
-                            <rect key="frame" x="207" y="25" width="41.5" height="30"/>
-                            <state key="normal" title="^"/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="KuS-S4-3US"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGd-am-v7A">
-                            <rect key="frame" x="248.5" y="25" width="41.5" height="30"/>
-                            <state key="normal" title="&amp;"/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="scm-tT-mmm"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iR-2e-WO6">
-                            <rect key="frame" x="290" y="25" width="41" height="30"/>
-                            <state key="normal" title="*"/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="qHO-xe-tYq"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pH-KR-DO4">
-                            <rect key="frame" x="331" y="25" width="41.5" height="30"/>
-                            <state key="normal" title="("/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="dZL-UT-0rT"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvq-cY-Pgx">
-                            <rect key="frame" x="372.5" y="25" width="41.5" height="30"/>
-                            <state key="normal" title=")"/>
-                            <connections>
-                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Ywy-Vn-Ebl"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vld-dm-Ysi" userLabel="NumberSet">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-0U-AEi">
-                            <rect key="frame" x="0.0" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-0U-AEi" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="0.0" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="1"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="7gh-ZJ-fPL"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yb-qP-gN7">
-                            <rect key="frame" x="41.5" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yb-qP-gN7" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="40.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="2"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="rbs-dd-Klk"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iL-h2-WKH">
-                            <rect key="frame" x="83" y="25" width="41" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iL-h2-WKH" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="81" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="3"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="iQh-br-iPi"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlZ-qU-soA">
-                            <rect key="frame" x="124" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlZ-qU-soA" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="121.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="4"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Z6Z-Cu-Lnb"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldy-VI-W2o">
-                            <rect key="frame" x="165.5" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldy-VI-W2o" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="162" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="5"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="9gZ-MU-4RP"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3W-62-85O">
-                            <rect key="frame" x="207" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3W-62-85O" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="202.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="6"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="DV7-Pk-JTv"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIy-7W-liQ">
-                            <rect key="frame" x="248.5" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIy-7W-liQ" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="243" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="7"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="4Mf-VY-bRU"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8k-fU-shw">
-                            <rect key="frame" x="290" y="25" width="41" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8k-fU-shw" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="283.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="8"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="VEx-ct-UQl"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYV-mp-5QT">
-                            <rect key="frame" x="331" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYV-mp-5QT" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="324" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="9"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="3eW-AN-f3I"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-S6-YvA">
-                            <rect key="frame" x="372.5" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-S6-YvA" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="364.5" y="0.0" width="43.5" height="55"/>
                             <state key="normal" title="0"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="fZS-oM-9Z0"/>
                             </connections>
                         </button>
                     </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="dDq-vu-SY0"/>
+                    </constraints>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HdL-Iu-t6j">
-                    <rect key="frame" x="0.0" y="80" width="414" height="80"/>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3fL-dr-Sv9" userLabel="CharSet">
+                    <rect key="frame" x="3" y="138" width="408" height="55"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caG-m7-evT">
-                            <rect key="frame" x="0.0" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3T-zW-7QW" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="0.0" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="-"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="LPt-tK-LjS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-FO-ljj" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="40.5" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="/"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="3yR-UN-Cnz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VS-HX-M5P" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="81" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title=":"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Gfe-jG-jp7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlp-yU-OTE" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="121.5" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title=";"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="SOo-V9-ObC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbR-qU-Qgy" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="162" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="("/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="fcc-DS-tEa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhw-Yd-tJy" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="202.5" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title=")"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="KuS-S4-3US"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGd-am-v7A" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="243" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="$"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="scm-tT-mmm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iR-2e-WO6" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="283.5" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="&amp;"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="qHO-xe-tYq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pH-KR-DO4" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="324" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="@"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="dZL-UT-0rT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvq-cY-Pgx" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="364.5" y="0.0" width="43.5" height="55"/>
+                            <state key="normal" title="&quot;"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Ywy-Vn-Ebl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="mWe-cM-lfg"/>
+                    </constraints>
+                </stackView>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oft-vy-naI" userLabel="CharSet2">
+                    <rect key="frame" x="70" y="201" width="274" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX8-Vu-9h8" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="0.0" y="0.0" width="48.5" height="55"/>
+                            <state key="normal" title="."/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="UsU-ug-2t0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCC-Jn-poW" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="53.5" y="0.0" width="48" height="55"/>
+                            <state key="normal" title=","/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Puj-rA-M2w"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcG-eT-LXk" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="106.5" y="0.0" width="48.5" height="55"/>
+                            <state key="normal" title="?"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="trg-eq-Sb1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87k-QT-KLr" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="160" y="0.0" width="48.5" height="55"/>
+                            <state key="normal" title="!"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="9mh-FE-TuJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFP-Ce-c4d" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="213.5" y="0.0" width="60.5" height="55"/>
+                            <state key="normal" title="'"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="nRa-Sh-ogp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="REy-Ut-t3B"/>
+                    </constraints>
+                </stackView>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8tB-DD-mx0" userLabel="CharSet3">
+                    <rect key="frame" x="0.0" y="75" width="414" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-xG-WgH" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="0.0" y="0.0" width="36" height="55"/>
+                            <state key="normal" title="["/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Nbx-mG-6gs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gN-26-Mmy" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="41" y="0.0" width="36" height="55"/>
+                            <state key="normal" title="]"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="k1j-Sl-Fmt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIa-8z-0TC" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="82" y="0.0" width="36" height="55"/>
+                            <state key="normal" title="{"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="zXG-3G-KWa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF7-VE-dru" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="123" y="0.0" width="36" height="55"/>
+                            <state key="normal" title="}"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="hSu-he-6AU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znk-Fb-Mem" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="164" y="0.0" width="36" height="55"/>
+                            <state key="normal" title="#"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Keb-nu-xTD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUP-nQ-kLp" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="205" y="0.0" width="36" height="55"/>
+                            <state key="normal" title="%"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="roK-Qc-dtu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Y-yR-AQr" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="246" y="0.0" width="36" height="55"/>
+                            <state key="normal" title="^"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="IUd-r9-5AG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTa-nn-MUm" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="287" y="0.0" width="36" height="55"/>
+                            <state key="normal" title="*"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="cw3-IA-xZ6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsN-cR-Cdf" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="328" y="0.0" width="36" height="55"/>
+                            <state key="normal" title="+"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="QmO-mF-z61"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4Z-8e-VpA" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="369" y="0.0" width="45" height="55"/>
+                            <state key="normal" title="="/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="oRb-hx-h0Y"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="P1N-wD-Tns"/>
+                    </constraints>
+                </stackView>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RjS-YC-8yQ" userLabel="CharSet4">
+                    <rect key="frame" x="3" y="138" width="408" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLD-gi-gzK" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="0.0" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="_"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="75P-Vo-6N8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DM-cu-Md9" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="40.5" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="\"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="1gc-bQ-5Rq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLl-12-cXX" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="81" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="|"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="yhZ-te-XSm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdP-SQ-eS9" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="121.5" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="$"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="pbQ-oS-ZA8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dg2-Vi-ux8" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="162" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="&lt;"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="OOo-jr-yEt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wou-Fp-6XA" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="202.5" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="&gt;"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="0d3-xT-a9C"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCn-bM-bje" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="243" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="$"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="yIQ-u0-bb7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRt-eT-zBX" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="283.5" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="$"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="OWL-vg-378"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5c-zN-Fyq" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="324" y="0.0" width="35.5" height="55"/>
+                            <state key="normal" title="$"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Dlb-Jp-aOO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxC-WO-d7b" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="364.5" y="0.0" width="43.5" height="55"/>
+                            <state key="normal" title="$"/>
+                            <connections>
+                                <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="tms-QX-qRb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="XdQ-zD-WVa"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeN-js-2SB" userLabel="ForImage">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoKeyboard" translatesAutoresizingMaskIntoConstraints="NO" id="J9k-qz-Tl5">
+                            <rect key="frame" x="20" y="15" width="40" height="40"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="3XA-gf-Q3e"/>
+                                <constraint firstAttribute="height" constant="40" id="Yye-3Q-ATf"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="gVT-SC-y5y"/>
+                        <constraint firstItem="J9k-qz-Tl5" firstAttribute="leading" secondItem="qeN-js-2SB" secondAttribute="leading" constant="20" id="mdh-AL-cjJ"/>
+                        <constraint firstItem="J9k-qz-Tl5" firstAttribute="centerY" secondItem="qeN-js-2SB" secondAttribute="centerY" id="rOk-s3-9mk"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HdL-Iu-t6j" userLabel="Stack View1">
+                    <rect key="frame" x="3" y="75" width="408" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caG-m7-evT" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="0.0" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="Q"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="LQ1-ho-92w"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dub-fB-Ua7">
-                            <rect key="frame" x="41.5" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dub-fB-Ua7" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="40.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="W"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="GJa-nJ-CRn"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aim-qy-8Bb">
-                            <rect key="frame" x="83" y="25" width="41" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aim-qy-8Bb" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="81" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="E"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="NR3-JX-GMX"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jng-fK-k7k">
-                            <rect key="frame" x="124" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jng-fK-k7k" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="121.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="R"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Cv8-C8-YCC"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4n-Pn-iYT">
-                            <rect key="frame" x="165.5" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4n-Pn-iYT" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="162" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="T"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="uJn-D8-JzO"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u41-nN-wRU">
-                            <rect key="frame" x="207" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u41-nN-wRU" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="202.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="Y"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="3gh-gA-zcb"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOA-gX-FkG">
-                            <rect key="frame" x="248.5" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOA-gX-FkG" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="243" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="U"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="xt2-w9-Aer"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EA-s8-RBd">
-                            <rect key="frame" x="290" y="25" width="41" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EA-s8-RBd" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="283.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="I"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="6fw-wu-ZhZ"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54a-jD-Sf0">
-                            <rect key="frame" x="331" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54a-jD-Sf0" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="324" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="O"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="B3H-7v-sOq"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEv-ds-Ulv">
-                            <rect key="frame" x="372.5" y="25" width="41.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEv-ds-Ulv" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="364.5" y="0.0" width="43.5" height="55"/>
                             <state key="normal" title="P"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="bXm-j5-jPh"/>
                             </connections>
                         </button>
                     </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="OCP-HX-oME"/>
+                    </constraints>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dmf-qE-4mf">
-                    <rect key="frame" x="0.0" y="160" width="414" height="80"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edx-Pp-m3t" userLabel="shift" customClass="KeyboardOtherButton" customModule="EfKeyboard">
+                    <rect key="frame" x="19" y="204.5" width="21" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="shift" catalog="system"/>
+                    <connections>
+                        <action selector="shiftPressedWithSender:" destination="-1" eventType="touchUpInside" id="pDI-Ms-oyK"/>
+                        <outletCollection property="gestureRecognizers" destination="MAt-JL-Uro" appends="YES" id="jcJ-fy-9cB"/>
+                        <outletCollection property="gestureRecognizers" destination="m3o-AM-rZY" appends="YES" id="5pN-d6-Aof"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dmf-qE-4mf" userLabel="Stack View2">
+                    <rect key="frame" x="25" y="138" width="364" height="55"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H67-EB-m9g">
-                            <rect key="frame" x="0.0" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H67-EB-m9g" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="55"/>
                             <state key="normal" title="A"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Bne-lb-JX6"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeQ-V2-kVk">
-                            <rect key="frame" x="46" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeQ-V2-kVk" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="40" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="S"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="wWZ-gQ-loh"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUf-VE-j4W">
-                            <rect key="frame" x="92" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUf-VE-j4W" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="80.5" y="0.0" width="35" height="55"/>
                             <state key="normal" title="D"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="dBz-5f-eqo"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wS8-39-gQC">
-                            <rect key="frame" x="138" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wS8-39-gQC" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="120.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="F"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="4Z9-qo-U1x"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG6-LG-rBM">
-                            <rect key="frame" x="184" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG6-LG-rBM" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="161" y="0.0" width="35" height="55"/>
                             <state key="normal" title="G"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="ByY-H9-dQ6"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83L-b8-NoM">
-                            <rect key="frame" x="230" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83L-b8-NoM" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="201" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="H"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="c31-bH-Yoc"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzF-yE-NgI">
-                            <rect key="frame" x="276" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzF-yE-NgI" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="241.5" y="0.0" width="35" height="55"/>
                             <state key="normal" title="J"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Cu5-0g-Zhl"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaR-bM-6cR">
-                            <rect key="frame" x="322" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaR-bM-6cR" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="281.5" y="0.0" width="35.5" height="55"/>
                             <state key="normal" title="K"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="lx7-lv-jy7"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-8x-JdI">
-                            <rect key="frame" x="368" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-8x-JdI" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="322" y="0.0" width="42" height="55"/>
                             <state key="normal" title="L"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="ixC-or-3Hc"/>
                             </connections>
                         </button>
                     </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Edn-Ay-wqP"/>
+                    </constraints>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2MW-KR-5YF">
-                    <rect key="frame" x="0.0" y="240" width="414" height="80"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2MW-KR-5YF" userLabel="Stack View3">
+                    <rect key="frame" x="60" y="201" width="294" height="55"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edx-Pp-m3t">
-                            <rect key="frame" x="0.0" y="29" width="46" height="22"/>
-                            <state key="normal" title="Shift" image="shift" catalog="system"/>
-                            <connections>
-                                <action selector="shiftPressedWithSender:" destination="-1" eventType="touchUpInside" id="pDI-Ms-oyK"/>
-                                <outletCollection property="gestureRecognizers" destination="m3o-AM-rZY" appends="YES" id="5pN-d6-Aof"/>
-                                <outletCollection property="gestureRecognizers" destination="MAt-JL-Uro" appends="YES" id="jcJ-fy-9cB"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaC-8A-BYx">
-                            <rect key="frame" x="46" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaC-8A-BYx" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="0.0" y="0.0" width="37" height="55"/>
                             <state key="normal" title="Z"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="CSw-L0-Zno"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFW-hI-uVE">
-                            <rect key="frame" x="92" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFW-hI-uVE" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="42" y="0.0" width="36.5" height="55"/>
                             <state key="normal" title="X"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="Nmw-Xe-glA"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wso-8U-A3o">
-                            <rect key="frame" x="138" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wso-8U-A3o" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="83.5" y="0.0" width="37" height="55"/>
                             <state key="normal" title="C"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="suL-hq-O25"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9t-dg-Vqu">
-                            <rect key="frame" x="184" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9t-dg-Vqu" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="125.5" y="0.0" width="36.5" height="55"/>
                             <state key="normal" title="V"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="2wL-vP-Ax5"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGC-fn-Vaq">
-                            <rect key="frame" x="230" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGC-fn-Vaq" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="167" y="0.0" width="37" height="55"/>
                             <state key="normal" title="B"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="jpy-rM-whm"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIy-Ny-Xa1">
-                            <rect key="frame" x="276" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIy-Ny-Xa1" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="209" y="0.0" width="36.5" height="55"/>
                             <state key="normal" title="N"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="4eH-sL-3wu"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBH-mq-5JR">
-                            <rect key="frame" x="322" y="25" width="46" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBH-mq-5JR" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="250.5" y="0.0" width="43.5" height="55"/>
                             <state key="normal" title="M"/>
                             <connections>
                                 <action selector="keyPressedWithSender:" destination="-1" eventType="touchUpInside" id="0q8-Et-6b8"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imL-Lx-txt">
-                            <rect key="frame" x="368" y="25" width="46" height="30"/>
-                            <state key="normal" title="BS"/>
-                            <connections>
-                                <action selector="backSpacePressedWithSender:" destination="-1" eventType="touchUpInside" id="Opk-IE-GfY"/>
-                            </connections>
-                        </button>
                     </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="UeT-7V-WRw"/>
+                    </constraints>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rJf-qD-lOl">
-                    <rect key="frame" x="0.0" y="320" width="414" height="80"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imL-Lx-txt" userLabel="BackButton" customClass="KeyboardOtherButton" customModule="EfKeyboard">
+                    <rect key="frame" x="371" y="201" width="40" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="6Yc-PZ-N26"/>
+                        <constraint firstAttribute="width" constant="40" id="mUZ-lz-giZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="delete.left" catalog="system"/>
+                    <connections>
+                        <action selector="backSpacePressedWithSender:" destination="-1" eventType="touchUpInside" id="Opk-IE-GfY"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rJf-qD-lOl" userLabel="Stack View4">
+                    <rect key="frame" x="3" y="264" width="408" height="53"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCr-st-qqe">
-                            <rect key="frame" x="0.0" y="25" width="83" height="30"/>
-                            <state key="normal" title="!@#"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCr-st-qqe" customClass="KeyboardOtherButton" customModule="EfKeyboard">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="rfs-Ep-jrN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <state key="normal" title="123">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="charSetPressedWithSender:" destination="-1" eventType="touchUpInside" id="EJR-Uy-y2k"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvF-UT-Dhi">
-                            <rect key="frame" x="83" y="25" width="82.5" height="30"/>
-                            <state key="normal" title="KB"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvF-UT-Dhi" customClass="KeyboardOtherButton" customModule="EfKeyboard">
+                            <rect key="frame" x="55" y="0.0" width="50" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="DCi-Nb-GpJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="face.smiling" catalog="system"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ4-uR-ccy">
-                            <rect key="frame" x="165.5" y="25" width="83" height="30"/>
-                            <state key="normal" title="Space"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ4-uR-ccy" customClass="KeyboardButton" customModule="EfKeyboard">
+                            <rect key="frame" x="110" y="0.0" width="208" height="53"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" image="logoSpace">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <connections>
                                 <action selector="spacePressedWithSender:" destination="-1" eventType="touchUpInside" id="mgh-Dj-ylf"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHX-tq-An9">
-                            <rect key="frame" x="248.5" y="25" width="82.5" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHX-tq-An9" customClass="KeyboardButton" customModule="EfKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="323" y="0.0" width="30" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="zuh-hg-Jin"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="."/>
                             <connections>
                                 <action selector="dotPressedWithSender:" destination="-1" eventType="touchUpInside" id="Drw-dZ-MNq"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syj-pt-5io">
-                            <rect key="frame" x="331" y="25" width="83" height="30"/>
-                            <state key="normal" title="RTN"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syj-pt-5io" customClass="KeyboardOtherButton" customModule="EfKeyboard">
+                            <rect key="frame" x="358" y="0.0" width="50" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="HvM-II-UeB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="arrow.forward" catalog="system"/>
                             <connections>
                                 <action selector="returnPressedWithSender:" destination="-1" eventType="touchUpInside" id="HEV-ga-l8f"/>
                             </connections>
                         </button>
                     </subviews>
                 </stackView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWa-wp-4aQ" customClass="KeyboardOtherButton" customModule="EfKeyboard">
+                    <rect key="frame" x="13" y="201" width="50" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="e5O-ut-uL1"/>
+                        <constraint firstAttribute="height" constant="55" id="zvL-7N-El6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="#+=">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="otherCharPressed:" destination="-1" eventType="touchUpInside" id="ClD-Sj-kLn"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="R0v-jo-dqD"/>
             <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <gestureRecognizers/>
             <constraints>
-                <constraint firstItem="3fL-dr-Sv9" firstAttribute="width" secondItem="aDE-cx-k71" secondAttribute="width" id="0EQ-JE-NvX"/>
-                <constraint firstItem="dmf-qE-4mf" firstAttribute="width" secondItem="aDE-cx-k71" secondAttribute="width" id="3xz-L6-GAn"/>
-                <constraint firstItem="vld-dm-Ysi" firstAttribute="width" secondItem="aDE-cx-k71" secondAttribute="width" id="488-da-vM3"/>
-                <constraint firstAttribute="trailing" secondItem="rJf-qD-lOl" secondAttribute="trailing" id="4iL-Eg-kGn"/>
-                <constraint firstItem="rJf-qD-lOl" firstAttribute="height" secondItem="aDE-cx-k71" secondAttribute="height" multiplier="0.2" id="5zt-6e-Ylj"/>
-                <constraint firstItem="3fL-dr-Sv9" firstAttribute="height" secondItem="aDE-cx-k71" secondAttribute="height" multiplier="0.2" id="6qB-ZG-LEQ"/>
-                <constraint firstItem="rJf-qD-lOl" firstAttribute="top" secondItem="2MW-KR-5YF" secondAttribute="bottom" id="8b6-uV-1ZI"/>
-                <constraint firstItem="vld-dm-Ysi" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" id="BMU-jg-pzM"/>
-                <constraint firstItem="HdL-Iu-t6j" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" id="Cq2-KX-Efm"/>
-                <constraint firstItem="vld-dm-Ysi" firstAttribute="top" secondItem="aDE-cx-k71" secondAttribute="top" id="Cv7-h2-V7E"/>
-                <constraint firstItem="dmf-qE-4mf" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" id="Dmz-eJ-sx2"/>
-                <constraint firstItem="2MW-KR-5YF" firstAttribute="top" secondItem="dmf-qE-4mf" secondAttribute="bottom" id="EQ7-Lc-V5V"/>
-                <constraint firstItem="2MW-KR-5YF" firstAttribute="height" secondItem="aDE-cx-k71" secondAttribute="height" multiplier="0.2" id="Itj-Jk-ebt"/>
-                <constraint firstItem="vld-dm-Ysi" firstAttribute="centerX" secondItem="aDE-cx-k71" secondAttribute="centerX" id="LmX-H3-zMG"/>
-                <constraint firstAttribute="trailing" secondItem="2MW-KR-5YF" secondAttribute="trailing" id="NBo-1C-A8n"/>
-                <constraint firstItem="dmf-qE-4mf" firstAttribute="top" secondItem="HdL-Iu-t6j" secondAttribute="bottom" id="O2x-WL-6ab"/>
-                <constraint firstItem="HdL-Iu-t6j" firstAttribute="top" secondItem="vld-dm-Ysi" secondAttribute="bottom" id="Pe7-aN-mW5"/>
-                <constraint firstItem="2MW-KR-5YF" firstAttribute="centerX" secondItem="aDE-cx-k71" secondAttribute="centerX" id="QcW-X4-kQn"/>
-                <constraint firstItem="rJf-qD-lOl" firstAttribute="top" secondItem="2MW-KR-5YF" secondAttribute="bottom" id="Qhu-aW-6G8"/>
-                <constraint firstAttribute="trailing" secondItem="3fL-dr-Sv9" secondAttribute="trailing" id="Rth-Jz-071"/>
-                <constraint firstItem="2MW-KR-5YF" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" id="UlZ-bX-FGX"/>
-                <constraint firstItem="3fL-dr-Sv9" firstAttribute="top" secondItem="aDE-cx-k71" secondAttribute="top" id="YZc-gv-TaK"/>
-                <constraint firstAttribute="trailing" secondItem="dmf-qE-4mf" secondAttribute="trailing" id="Zpj-EF-plo"/>
-                <constraint firstItem="3fL-dr-Sv9" firstAttribute="centerX" secondItem="aDE-cx-k71" secondAttribute="centerX" id="ajY-w8-Cvx"/>
-                <constraint firstAttribute="trailing" secondItem="vld-dm-Ysi" secondAttribute="trailing" id="asI-F9-lCs"/>
-                <constraint firstItem="2MW-KR-5YF" firstAttribute="top" secondItem="dmf-qE-4mf" secondAttribute="bottom" id="dys-wb-ae2"/>
-                <constraint firstItem="dmf-qE-4mf" firstAttribute="top" secondItem="HdL-Iu-t6j" secondAttribute="bottom" id="eaV-m8-wHU"/>
-                <constraint firstItem="HdL-Iu-t6j" firstAttribute="width" secondItem="aDE-cx-k71" secondAttribute="width" id="fBQ-Wp-GwB"/>
-                <constraint firstItem="HdL-Iu-t6j" firstAttribute="height" secondItem="aDE-cx-k71" secondAttribute="height" multiplier="0.2" id="g72-9h-PJs"/>
-                <constraint firstItem="rJf-qD-lOl" firstAttribute="centerX" secondItem="aDE-cx-k71" secondAttribute="centerX" id="kWw-2s-JHS"/>
-                <constraint firstItem="vld-dm-Ysi" firstAttribute="height" secondItem="aDE-cx-k71" secondAttribute="height" multiplier="0.2" id="lWE-Yl-5fH"/>
-                <constraint firstAttribute="bottom" secondItem="rJf-qD-lOl" secondAttribute="bottom" id="o1f-wV-gZw"/>
-                <constraint firstItem="rJf-qD-lOl" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" id="ogk-gE-GzJ"/>
-                <constraint firstItem="dmf-qE-4mf" firstAttribute="height" secondItem="aDE-cx-k71" secondAttribute="height" multiplier="0.2" id="oiV-LI-C5W"/>
-                <constraint firstItem="rJf-qD-lOl" firstAttribute="width" secondItem="aDE-cx-k71" secondAttribute="width" id="pLH-Vp-j1X"/>
-                <constraint firstItem="3fL-dr-Sv9" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" id="rn0-Rs-buF"/>
-                <constraint firstAttribute="trailing" secondItem="HdL-Iu-t6j" secondAttribute="trailing" id="srC-ze-ySK"/>
-                <constraint firstItem="dmf-qE-4mf" firstAttribute="centerX" secondItem="aDE-cx-k71" secondAttribute="centerX" id="ubu-jS-6qz"/>
-                <constraint firstItem="HdL-Iu-t6j" firstAttribute="centerX" secondItem="aDE-cx-k71" secondAttribute="centerX" id="x0l-cR-Tgp"/>
-                <constraint firstItem="2MW-KR-5YF" firstAttribute="width" secondItem="aDE-cx-k71" secondAttribute="width" id="zbw-Ma-Toh"/>
+                <constraint firstItem="RjS-YC-8yQ" firstAttribute="top" secondItem="vld-dm-Ysi" secondAttribute="bottom" constant="8" id="4Qb-kC-sOu"/>
+                <constraint firstItem="rJf-qD-lOl" firstAttribute="trailing" secondItem="aDE-cx-k71" secondAttribute="trailing" constant="-3" id="4iL-Eg-kGn"/>
+                <constraint firstItem="oft-vy-naI" firstAttribute="leading" secondItem="CWa-wp-4aQ" secondAttribute="trailing" constant="7" id="6Ot-C1-3Uc"/>
+                <constraint firstItem="rJf-qD-lOl" firstAttribute="top" secondItem="2MW-KR-5YF" secondAttribute="bottom" constant="8" id="8b6-uV-1ZI"/>
+                <constraint firstItem="HdL-Iu-t6j" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" constant="3" id="Cq2-KX-Efm"/>
+                <constraint firstAttribute="trailing" secondItem="8tB-DD-mx0" secondAttribute="trailing" id="DZV-Kc-mNI"/>
+                <constraint firstItem="dmf-qE-4mf" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" constant="25" id="Dmz-eJ-sx2"/>
+                <constraint firstItem="2MW-KR-5YF" firstAttribute="top" secondItem="dmf-qE-4mf" secondAttribute="bottom" constant="8" id="EQ7-Lc-V5V"/>
+                <constraint firstItem="imL-Lx-txt" firstAttribute="trailing" secondItem="R0v-jo-dqD" secondAttribute="trailing" constant="-3" id="Fvu-a1-b6e"/>
+                <constraint firstItem="RjS-YC-8yQ" firstAttribute="leading" secondItem="R0v-jo-dqD" secondAttribute="leading" constant="3" id="Hwf-SD-My5"/>
+                <constraint firstItem="Edx-Pp-m3t" firstAttribute="trailing" secondItem="2MW-KR-5YF" secondAttribute="leading" constant="-20" id="K4v-Gw-yJr"/>
+                <constraint firstItem="oft-vy-naI" firstAttribute="top" secondItem="3fL-dr-Sv9" secondAttribute="bottom" constant="8" id="KLE-ae-aJh"/>
+                <constraint firstItem="2MW-KR-5YF" firstAttribute="trailing" secondItem="aDE-cx-k71" secondAttribute="trailing" constant="-60" id="NBo-1C-A8n"/>
+                <constraint firstItem="dmf-qE-4mf" firstAttribute="top" secondItem="HdL-Iu-t6j" secondAttribute="bottom" constant="8" id="O2x-WL-6ab"/>
+                <constraint firstItem="vld-dm-Ysi" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" constant="3" id="PAv-Gr-OK6"/>
+                <constraint firstItem="HdL-Iu-t6j" firstAttribute="top" secondItem="qeN-js-2SB" secondAttribute="bottom" constant="5" id="Pe7-aN-mW5"/>
+                <constraint firstItem="oft-vy-naI" firstAttribute="trailing" secondItem="R0v-jo-dqD" secondAttribute="trailing" constant="-70" id="SDz-5F-6nu"/>
+                <constraint firstItem="vld-dm-Ysi" firstAttribute="top" secondItem="qeN-js-2SB" secondAttribute="bottom" constant="5" id="SQH-0E-TXN"/>
+                <constraint firstItem="R0v-jo-dqD" firstAttribute="trailing" secondItem="RjS-YC-8yQ" secondAttribute="trailing" constant="3" id="THK-Sl-RUQ"/>
+                <constraint firstItem="2MW-KR-5YF" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" constant="60" id="UlZ-bX-FGX"/>
+                <constraint firstItem="dmf-qE-4mf" firstAttribute="trailing" secondItem="aDE-cx-k71" secondAttribute="trailing" constant="-25" id="Zpj-EF-plo"/>
+                <constraint firstItem="3fL-dr-Sv9" firstAttribute="top" secondItem="vld-dm-Ysi" secondAttribute="bottom" constant="8" id="a5q-X1-ynE"/>
+                <constraint firstItem="8tB-DD-mx0" firstAttribute="leading" secondItem="R0v-jo-dqD" secondAttribute="leading" id="bAo-pT-SSx"/>
+                <constraint firstItem="3fL-dr-Sv9" firstAttribute="trailing" secondItem="aDE-cx-k71" secondAttribute="trailing" constant="-3" id="ct8-MY-dBC"/>
+                <constraint firstItem="qeN-js-2SB" firstAttribute="trailing" secondItem="R0v-jo-dqD" secondAttribute="trailing" id="fgT-0k-hmV"/>
+                <constraint firstItem="imL-Lx-txt" firstAttribute="centerY" secondItem="2MW-KR-5YF" secondAttribute="centerY" id="iGo-fz-0OZ"/>
+                <constraint firstItem="Edx-Pp-m3t" firstAttribute="centerY" secondItem="2MW-KR-5YF" secondAttribute="centerY" id="jaZ-PF-8rd"/>
+                <constraint firstItem="qeN-js-2SB" firstAttribute="leading" secondItem="R0v-jo-dqD" secondAttribute="leading" id="jbo-cE-cNI"/>
+                <constraint firstAttribute="trailing" secondItem="vld-dm-Ysi" secondAttribute="trailing" constant="3" id="lMK-tE-iil"/>
+                <constraint firstItem="rJf-qD-lOl" firstAttribute="bottom" secondItem="aDE-cx-k71" secondAttribute="bottom" constant="-3" id="o1f-wV-gZw"/>
+                <constraint firstItem="rJf-qD-lOl" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" constant="3" id="ogk-gE-GzJ"/>
+                <constraint firstItem="8tB-DD-mx0" firstAttribute="top" secondItem="qeN-js-2SB" secondAttribute="bottom" constant="5" id="pUl-2b-6mk"/>
+                <constraint firstItem="3fL-dr-Sv9" firstAttribute="leading" secondItem="aDE-cx-k71" secondAttribute="leading" constant="3" id="rmr-yW-Thp"/>
+                <constraint firstItem="HdL-Iu-t6j" firstAttribute="trailing" secondItem="aDE-cx-k71" secondAttribute="trailing" constant="-3" id="srC-ze-ySK"/>
+                <constraint firstItem="CWa-wp-4aQ" firstAttribute="centerY" secondItem="oft-vy-naI" secondAttribute="centerY" id="vm6-XU-cJe"/>
+                <constraint firstItem="oft-vy-naI" firstAttribute="leading" secondItem="R0v-jo-dqD" secondAttribute="leading" constant="70" id="x2J-g8-D3a"/>
+                <constraint firstItem="qeN-js-2SB" firstAttribute="top" secondItem="aDE-cx-k71" secondAttribute="top" id="zmu-q7-M20"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-1530" y="85"/>
@@ -484,6 +766,11 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
+        <image name="arrow.forward" catalog="system" width="128" height="98"/>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="face.smiling" catalog="system" width="128" height="121"/>
+        <image name="logoKeyboard" width="84" height="102"/>
+        <image name="logoSpace" width="288" height="76"/>
         <image name="shift" catalog="system" width="128" height="106"/>
     </resources>
 </document>

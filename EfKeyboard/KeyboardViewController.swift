@@ -19,6 +19,12 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet weak var numberSet: UIStackView!
     @IBOutlet weak var charSet: UIStackView!
     @IBOutlet weak var shiftButton: UIButton!
+    @IBOutlet weak var charSet2: UIStackView!
+    @IBOutlet weak var charSet3: UIStackView!
+    @IBOutlet weak var charSet4: UIStackView!
+    
+    @IBOutlet weak var otherChar: UIButton!
+    @IBOutlet weak var logo: UIImageView!
     
     private var proxy: UITextDocumentProxy {
         return textDocumentProxy
@@ -53,15 +59,47 @@ class KeyboardViewController: UIInputViewController {
         }
     }
     
-    @IBAction func charSetPressed(sender: UIButton) {
-        if sender.titleLabel!.text == "!@#" {
+    @IBAction func otherCharPressed(_ sender: UIButton) {
+        if sender.titleLabel!.text == "#+=" {
+            charSet3.isHidden = false
+            charSet4.isHidden = false
             numberSet.isHidden = true
-            charSet.isHidden = false
+            charSet.isHidden = true
             sender.setTitle("123", for: .normal)
         } else {
+            charSet3.isHidden = true
+            charSet4.isHidden = true
             numberSet.isHidden = false
+            charSet.isHidden = false
+            sender.setTitle("#+=", for: .normal)
+        }
+    }
+    @IBAction func charSetPressed(sender: UIButton) {
+        if sender.titleLabel!.text == "123" {
+            row1.isHidden = true
+            row2.isHidden = true
+            row3.isHidden = true
+            charSet3.isHidden = true
+            charSet4.isHidden = true
+            shiftButton.isHidden = true
+            numberSet.isHidden = false
+            charSet.isHidden = false
+            charSet2.isHidden = false
+            otherChar.isHidden = false
+            otherChar.setTitle("#+=", for: .normal)
+            sender.setTitle("ABC", for: .normal)
+        } else {
+            row1.isHidden = false
+            row2.isHidden = false
+            row3.isHidden = false
+            shiftButton.isHidden = false
+            numberSet.isHidden = true
             charSet.isHidden = true
-            sender.setTitle("!@#", for: .normal)
+            charSet2.isHidden = true
+            otherChar.isHidden = true
+            charSet3.isHidden = true
+            charSet4.isHidden = true
+            sender.setTitle("123", for: .normal)
         }
     }
     
@@ -116,9 +154,10 @@ class KeyboardViewController: UIInputViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             view.widthAnchor.constraint(equalToConstant: self.view.bounds.width),
-            view.heightAnchor.constraint(equalToConstant: 270)
+            view.heightAnchor.constraint(equalToConstant: 320)
         
         ])
+        logo.image = UIImage(named: "logo")
     }
     
     override func viewDidLoad() {

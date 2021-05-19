@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow()
         
-        let module = OnbordingWireFrame.create()
+        let module = MainWireFrame.create()
  //       let navigation = UINavigationController(rootViewController: module)
         window.rootViewController = module
         window.makeKeyAndVisible()
